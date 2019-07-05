@@ -1,6 +1,13 @@
 #random-number{
     font-weight: bold;
-    font-size: 25pt;
-    color: firebrick;
+    font-size: 30pt;
+    color: black;
+    margin: 20px;
+    padding-right: 100px;
+    padding-bottom: 75px;
+    padding-left: 15px;
+    border: 15px;
     
+    background-color: olivedrab;
+
 }
