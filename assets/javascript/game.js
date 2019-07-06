@@ -10,7 +10,7 @@ $(document).ready(function () {
     var minCryNum = 1;
     var maxCryNum = 12;
     var cryArrySz = 4;
-
+    var playerScr = 0;
 
     var rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
     console.log('#random-number: ' + rndNum)
@@ -36,6 +36,6 @@ $(document).ready(function () {
 
      console.log('crystal 1: ' + crystals[0] + ' crystal 2: ' + crystals[1] + ' crystal 3: ' + crystals[2] + ' crystal 4: ' + crystals[3]);
 
-     
+
 
     });
