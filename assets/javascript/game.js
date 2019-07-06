@@ -43,28 +43,44 @@ $(document).ready(function () {
      var crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
 
      console.log('crystal 1: ' + crystals[0] + ' crystal 2: ' + crystals[1] + ' crystal 3: ' + crystals[2] + ' crystal 4: ' + crystals[3]);
+     console.log(crystals);
 
 $('#crystal_01').on('click', function() {
     crystal1Scr = crystals[0] + crystal1Scr;
     $('#player-score').text(crystal1Scr + crystal2Scr + crystal3Scr + crystal4Scr);
     console.log(crystal1Scr);
-})
+});
 
 $('#crystal_02').on('click', function(){
     crystal2Scr = crystals[1] + crystal2Scr;
     $('#player-score').text(crystal2Scr + crystal1Scr + crystal3Scr + crystal4Scr);
     console.log(crystal2Scr);
-})
+});
 
 $('#crystal_03').on('click', function(){
     crystal3Scr = crystals[2] + crystal3Scr;
     $('#player-score').text(crystal3Scr + crystal2Scr + crystal1Scr + crystal4Scr);
     console.log(crystal3Scr);
-})
+});
 
 $('#crystal_04').on('click', function(){
     crystal4Scr = crystals[3] + crystal4Scr;
     $('#player-score').text(crystal4Scr + crystal3Scr + crystal2Scr + crystal1Scr);
     console.log(crystal4Scr);
-})
+});
+
+playerScr = crystal1Scr + crystal2Scr + crystal3Scr + crystal4Scr;
+console.log(playerScr);
+
+if (playerScr == rndNum){
+    wins ++;
+$('#wins').text(wins);
+console.log(wins);
+$('#result').text(winSt);
+} else if (playerScr > rndNum){
+    losses ++;
+    $('#losses').text(losses);
+    console.log(losses);
+    $('#result').text(losSt);
+};
     });
