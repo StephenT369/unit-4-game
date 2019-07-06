@@ -1,3 +1,4 @@
+/* IDs */
 #random-number{
     font-weight: bold;
     font-size: 30pt;
@@ -9,5 +10,14 @@
     border: 15px;
     
     background-color: #53c987;
+
+}
+
+/* classes */
+.crystals{
+    width: 200px;
+    float: left;
+    margin-top: 25px;
+    padding: 25px;
 
 }
