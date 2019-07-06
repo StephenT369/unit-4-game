@@ -10,8 +10,21 @@
     border: 15px;
     
     background-color: #53c987;
-
 }
+
+#player-score{
+    font-weight: bold;
+    font-size: 30pt;
+    color: white;
+    margin: 20px;
+    padding-right: 100px;
+    padding-bottom: 75px;
+    padding-left: 15px;
+    border: 15px;
+    
+    background-color: #1fa395;
+}
+
 
 /* classes */
 .crystals{
