@@ -23,6 +23,21 @@
     border: 15px;
     
     background-color: #1fa395;
+    float: left;
+}
+
+#player-total{
+    font-weight: bold;
+    font-size: 15pt;
+    color: white;
+    margin: 20px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border: 15px;
+    
+    background-color: #1fa395;
+    float: left;
 }
 
 
