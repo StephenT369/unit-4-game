@@ -29,11 +29,23 @@
     margin-left: 20px;
     width: 33%;
 }
+
+#instructions{
+    background-color: #fbe6cf;
+    color: green;
+    font-size:15pt;
+    font-weight: bold;
+    width: 40%;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
 #random-number{
     font-weight: bold;
     font-size: 30pt;
     color: black;
-    margin: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
     padding-right: 100px;
     padding-top: 15px;
     padding-bottom: 75px;
@@ -95,7 +107,8 @@
     font-weight: bold;
     background-color: #3afefd;
     font-size: 15pt;
-    margin: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
     color: black;
     padding-top: 10px;
     padding-bottom: 60px;
