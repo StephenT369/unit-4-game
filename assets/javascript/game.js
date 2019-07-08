@@ -21,7 +21,7 @@ $(document).ready(function () {
     var losSt = 'You lost!!';
 
     var rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
-    console.log('#random-number: ' + rndNum)
+    ////console.log('#random-number: ' + rndNum)
     $('#random-number').text(rndNum);
 
     Array.prototype.shuffle = function() {
@@ -42,29 +42,29 @@ $(document).ready(function () {
      
      var crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
 
-     console.log('crystal 1: ' + crystals[0] + ' crystal 2: ' + crystals[1] + ' crystal 3: ' + crystals[2] + ' crystal 4: ' + crystals[3]);
-     console.log(crystals);
+     ////console.log('crystal 1: ' + crystals[0] + ' crystal 2: ' + crystals[1] + ' crystal 3: ' + crystals[2] + ' crystal 4: ' + crystals[3]);
+     ////console.log(crystals);
 
 $('#crystal_01').on('click', function() {
     crystal1Scr = crystals[0] + crystal1Scr;
     $('#player-score').text(crystal1Scr + crystal2Scr + crystal3Scr + crystal4Scr);
-    console.log(crystal1Scr);
+    ////console.log(crystal1Scr);
 
     playerScr = crystal4Scr + crystal3Scr + crystal2Scr + crystal1Scr;
     
     if (playerScr == rndNum){
         wins ++;
         $('#wins').text(wins);
-        console.log(wins);
+        ////console.log(wins);
         $('#result').text(winSt);
         rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
-    console.log('#random-number: ' + rndNum)
+    ////console.log('#random-number: ' + rndNum)
     $('#random-number').text(rndNum);
 
 
 
     crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
-    console.log(crystals);
+    //console.log(crystals);
 
     playerScr = 0;
     $('#player-score').text(playerScr);
@@ -76,14 +76,14 @@ $('#crystal_01').on('click', function() {
     } else if (playerScr > rndNum){
         losses ++;
         $('#losses').text(losses);
-        console.log(losses);
+        //console.log(losses);
         $('#result').text(losSt);
         rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
-    console.log('#random-number: ' + rndNum)
+    //console.log('#random-number: ' + rndNum)
     $('#random-number').text(rndNum);
 
     crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
-    console.log(crystals);
+    //console.log(crystals);
 
     playerScr = 0;
     $('#player-score').text(playerScr);
@@ -98,21 +98,21 @@ $('#crystal_01').on('click', function() {
 $('#crystal_02').on('click', function(){
     crystal2Scr = crystals[1] + crystal2Scr;
     $('#player-score').text(crystal2Scr + crystal1Scr + crystal3Scr + crystal4Scr);
-    console.log(crystal2Scr);
+    //console.log(crystal2Scr);
 
     playerScr = crystal4Scr + crystal3Scr + crystal2Scr + crystal1Scr;
     
     if (playerScr == rndNum){
         wins ++;
         $('#wins').text(wins);
-        console.log(wins);
+        //console.log(wins);
         $('#result').text(winSt);
         rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
-    console.log('#random-number: ' + rndNum)
+    //console.log('#random-number: ' + rndNum)
     $('#random-number').text(rndNum);
     
     crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
-    console.log(crystals);
+    //console.log(crystals);
     playerScr = 0;
     $('#player-score').text(playerScr);
     crystal1Scr = 0;
@@ -123,14 +123,14 @@ $('#crystal_02').on('click', function(){
     } else if (playerScr > rndNum){
         losses ++;
         $('#losses').text(losses);
-        console.log(losses);
+        //console.log(losses);
         $('#result').text(losSt);
         rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
-    console.log('#random-number: ' + rndNum)
+    //console.log('#random-number: ' + rndNum)
     $('#random-number').text(rndNum);
     
     crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
-    console.log(crystals);
+    //console.log(crystals);
     playerScr = 0;
     $('#player-score').text(playerScr);
     crystal1Scr = 0;
@@ -145,21 +145,21 @@ $('#crystal_02').on('click', function(){
 $('#crystal_03').on('click', function(){
     crystal3Scr = crystals[2] + crystal3Scr;
     $('#player-score').text(crystal3Scr + crystal2Scr + crystal1Scr + crystal4Scr);
-    console.log(crystal3Scr);
+    //console.log(crystal3Scr);
 
     playerScr = crystal4Scr + crystal3Scr + crystal2Scr + crystal1Scr;
     
     if (playerScr == rndNum){
         wins ++;
         $('#wins').text(wins);
-        console.log(wins);
+        //console.log(wins);
         $('#result').text(winSt);
         rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
-    console.log('#random-number: ' + rndNum)
+    //console.log('#random-number: ' + rndNum)
     $('#random-number').text(rndNum);
     
     crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
-    console.log(crystals);
+    //console.log(crystals);
     
     playerScr = 0;
     $('#player-score').text(playerScr);
@@ -171,14 +171,14 @@ $('#crystal_03').on('click', function(){
     } else if (playerScr > rndNum){
         losses ++;
         $('#losses').text(losses);
-        console.log(losses);
+        //console.log(losses);
         $('#result').text(losSt);
         rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
-    console.log('#random-number: ' + rndNum)
+    //console.log('#random-number: ' + rndNum)
     $('#random-number').text(rndNum);
     
     crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
-    console.log(crystals);
+    //console.log(crystals);
     
     playerScr = 0;
     $('#player-score').text(playerScr);
@@ -194,21 +194,21 @@ $('#crystal_03').on('click', function(){
 $('#crystal_04').on('click', function(){
     crystal4Scr = crystals[3] + crystal4Scr;
     $('#player-score').text(crystal4Scr + crystal3Scr + crystal2Scr + crystal1Scr);
-    console.log(crystal4Scr);
+    //console.log(crystal4Scr);
 
     playerScr = crystal4Scr + crystal3Scr + crystal2Scr + crystal1Scr;
     
     if (playerScr == rndNum){
         wins ++;
         $('#wins').text(wins);
-        console.log(wins);
+        //console.log(wins);
         $('#result').text(winSt);
         rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
-    console.log('#random-number: ' + rndNum)
+    //console.log('#random-number: ' + rndNum)
     $('#random-number').text(rndNum);
     
     crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
-    console.log(crystals);
+    //console.log(crystals);
     playerScr = 0;
     $('#player-score').text(playerScr);
     crystal1Scr = 0;
@@ -219,14 +219,14 @@ $('#crystal_04').on('click', function(){
     } else if (playerScr > rndNum){
         losses ++;
         $('#losses').text(losses);
-        console.log(losses);
+        //console.log(losses);
         $('#result').text(losSt);
         rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
-    console.log('#random-number: ' + rndNum)
+    //console.log('#random-number: ' + rndNum)
     $('#random-number').text(rndNum);
     
     crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
-    console.log(crystals);
+    //console.log(crystals);
     playerScr = 0;
     $('#player-score').text(playerScr);
     crystal1Scr = 0;
