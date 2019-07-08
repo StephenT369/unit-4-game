@@ -55,6 +55,14 @@
 }
 
 /* classes */
+
+.clearfix::after
+{
+    content:" ";
+    display: block;
+    clear: both;
+}
+
 .crystals{
     width: 200px;
     float: left;
