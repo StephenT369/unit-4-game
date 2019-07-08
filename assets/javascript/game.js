@@ -57,11 +57,40 @@ $('#crystal_01').on('click', function() {
         $('#wins').text(wins);
         console.log(wins);
         $('#result').text(winSt);
+        rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
+    console.log('#random-number: ' + rndNum)
+    $('#random-number').text(rndNum);
+
+
+
+    crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
+    console.log(crystals);
+
+    playerScr = 0;
+    $('#player-score').text(playerScr);
+    crystal1Scr = 0;
+    crystal2Scr = 0;
+    crystal3Scr = 0;
+    crystal4Scr = 0;
+
     } else if (playerScr > rndNum){
         losses ++;
         $('#losses').text(losses);
         console.log(losses);
         $('#result').text(losSt);
+        rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
+    console.log('#random-number: ' + rndNum)
+    $('#random-number').text(rndNum);
+
+    crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
+    console.log(crystals);
+
+    playerScr = 0;
+    $('#player-score').text(playerScr);
+    crystal1Scr = 0;
+    crystal2Scr = 0;
+    crystal3Scr = 0;
+    crystal4Scr = 0;
     };
 
 });
@@ -78,11 +107,37 @@ $('#crystal_02').on('click', function(){
         $('#wins').text(wins);
         console.log(wins);
         $('#result').text(winSt);
+        rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
+    console.log('#random-number: ' + rndNum)
+    $('#random-number').text(rndNum);
+    
+    crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
+    console.log(crystals);
+    playerScr = 0;
+    $('#player-score').text(playerScr);
+    crystal1Scr = 0;
+    crystal2Scr = 0;
+    crystal3Scr = 0;
+    crystal4Scr = 0;
+
     } else if (playerScr > rndNum){
         losses ++;
         $('#losses').text(losses);
         console.log(losses);
         $('#result').text(losSt);
+        rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
+    console.log('#random-number: ' + rndNum)
+    $('#random-number').text(rndNum);
+    
+    crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
+    console.log(crystals);
+    playerScr = 0;
+    $('#player-score').text(playerScr);
+    crystal1Scr = 0;
+    crystal2Scr = 0;
+    crystal3Scr = 0;
+    crystal4Scr = 0;
+
     };
 
 });
@@ -99,11 +154,39 @@ $('#crystal_03').on('click', function(){
         $('#wins').text(wins);
         console.log(wins);
         $('#result').text(winSt);
+        rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
+    console.log('#random-number: ' + rndNum)
+    $('#random-number').text(rndNum);
+    
+    crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
+    console.log(crystals);
+    
+    playerScr = 0;
+    $('#player-score').text(playerScr);
+    crystal1Scr = 0;
+    crystal2Scr = 0;
+    crystal3Scr = 0;
+    crystal4Scr = 0;
+
     } else if (playerScr > rndNum){
         losses ++;
         $('#losses').text(losses);
         console.log(losses);
         $('#result').text(losSt);
+        rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
+    console.log('#random-number: ' + rndNum)
+    $('#random-number').text(rndNum);
+    
+    crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
+    console.log(crystals);
+    
+    playerScr = 0;
+    $('#player-score').text(playerScr);
+    crystal1Scr = 0;
+    crystal2Scr = 0;
+    crystal3Scr = 0;
+    crystal4Scr = 0;
+
     };
 
 });
@@ -120,28 +203,38 @@ $('#crystal_04').on('click', function(){
         $('#wins').text(wins);
         console.log(wins);
         $('#result').text(winSt);
+        rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
+    console.log('#random-number: ' + rndNum)
+    $('#random-number').text(rndNum);
+    
+    crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
+    console.log(crystals);
+    playerScr = 0;
+    $('#player-score').text(playerScr);
+    crystal1Scr = 0;
+    crystal2Scr = 0;
+    crystal3Scr = 0;
+    crystal4Scr = 0;
+
     } else if (playerScr > rndNum){
         losses ++;
         $('#losses').text(losses);
         console.log(losses);
         $('#result').text(losSt);
+        rndNum = Math.floor(Math.random() * (maxRndNum - minRndNum)) + minRndNum;
+    console.log('#random-number: ' + rndNum)
+    $('#random-number').text(rndNum);
+    
+    crystals = rndCrystals(cryArrySz, minCryNum, maxCryNum).map(Number);
+    console.log(crystals);
+    playerScr = 0;
+    $('#player-score').text(playerScr);
+    crystal1Scr = 0;
+    crystal2Scr = 0;
+    crystal3Scr = 0;
+    crystal4Scr = 0;
+
     };
 
 });
-
-
-playerScr = crystal1Scr + crystal2Scr + crystal3Scr + crystal4Scr;
-console.log(playerScr);
-
-if (playerScr == rndNum){
-    wins ++;
-$('#wins').text(wins);
-console.log(wins);
-$('#result').text(winSt);
-} else if (playerScr > rndNum){
-    losses ++;
-    $('#losses').text(losses);
-    console.log(losses);
-    $('#result').text(losSt);
-};
     });
