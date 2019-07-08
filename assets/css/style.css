@@ -16,6 +16,19 @@
     width: 100%;
 }
 
+#title{
+    font-weight: bold;
+    font-size: 30pt;
+    color: white;
+    background-color: #cb6f34;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    width: 33%;
+}
 #random-number{
     font-weight: bold;
     font-size: 30pt;
@@ -89,4 +102,9 @@
     padding-left: 3px;
     padding-right: 3px;
     position: relative;
+}
+
+/* html tags */
+h1{
+    padding-left: 10px;
 }
