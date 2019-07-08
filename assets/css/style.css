@@ -118,6 +118,10 @@
 }
 
 /* html tags */
+body{
+    background-image: url('../images/background.jpg');
+    background-size: 100%;
+}
 h1{
     padding-left: 10px;
 }
