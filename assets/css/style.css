@@ -9,7 +9,7 @@
 #crystalplane{
     float: left;
     position: realative;
-    width: 600px;
+    width: 100%;
 }
 
 #random-number{
@@ -59,17 +59,17 @@
 .clearfix::after
 {
     content:" ";
-    display: block;
+    display: table;
     clear: both;
 }
 
-.crystals{
-    width: 200px;
+.column{
+    padding: 5px;
     float: left;
-    margin-top: 25px;
-    padding: 25px;
-    
+}
 
+.crystals{
+    float: left;
 }
 
 .result-board{
