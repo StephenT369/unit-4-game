@@ -1,14 +1,28 @@
 /* IDs */
+
+#scoretrack{
+    float:left;
+    width: 275px;
+    position: relative;
+}
+
+#crystalplane{
+    float: left;
+    position: realative;
+    width: 600px;
+}
+
 #random-number{
     font-weight: bold;
     font-size: 30pt;
     color: black;
     margin: 20px;
     padding-right: 100px;
+    padding-top: 15px;
     padding-bottom: 75px;
     padding-left: 15px;
     border: 15px;
-    
+    width: 150px;
     background-color: #53c987;
 }
 
@@ -40,12 +54,26 @@
     float: left;
 }
 
-
 /* classes */
 .crystals{
     width: 200px;
     float: left;
     margin-top: 25px;
     padding: 25px;
+    
 
+}
+
+.result-board{
+    float: left;
+    font-weight: bold;
+    background-color: #3afefd;
+    font-size: 15pt;
+    margin: 20px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    position: relative;
 }
