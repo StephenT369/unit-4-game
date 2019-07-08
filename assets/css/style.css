@@ -8,7 +8,11 @@
 
 #crystalplane{
     float: left;
-    position: realative;
+    width: 100%;
+}
+
+#playerscrplane{
+    float: left;
     width: 100%;
 }
 
@@ -31,13 +35,14 @@
     font-size: 30pt;
     color: white;
     margin: 20px;
-    padding-right: 100px;
     padding-bottom: 75px;
     padding-left: 15px;
     border: 15px;
-    
     background-color: #1fa395;
     float: left;
+    margin-top: 65px;
+    position: absolute;
+    width: 200px;
 }
 
 #player-total{
@@ -45,13 +50,13 @@
     font-size: 15pt;
     color: white;
     margin: 20px;
-    padding-right: 50px;
     padding-bottom: 10px;
     padding-left: 15px;
+    padding-top: 10px;
     border: 15px;
-    
     background-color: #1fa395;
     float: left;
+    width: 200px;
 }
 
 /* classes */
